@@ -7,7 +7,7 @@ __status__ = "Production"
 
 from search import Search
 
-class Follow_App(Search):
+class G6_14_Day(Search):
     def __init__(self):
         super().__init__()
         self.title = ['G6_14_Day'.lower()]
@@ -48,5 +48,5 @@ class Follow_App(Search):
         sql_upload = sql_insert + ' ' + sql_update
         con.execute(sql_upload) 
 
-Follow_App().upload_doc_string_to_mysql()
+G6_14_Day().upload_doc_string_to_mysql()
 
