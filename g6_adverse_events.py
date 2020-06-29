@@ -5,7 +5,7 @@ __email__ = "christopher.stetzer@dexcom.com"
 
 from search import Search
 
-class Follow_App(Search):
+class G6_Adverse(Search):
     def __init__(self):
         super().__init__()
         self.title = ['G6_Adverse_Events'.lower()]
@@ -46,5 +46,5 @@ class Follow_App(Search):
         sql_upload = sql_insert + ' ' + sql_update
         con.execute(sql_upload) 
 
-Follow_App().upload_doc_string_to_mysql()
+G6_Adverse().upload_doc_string_to_mysql()
 
